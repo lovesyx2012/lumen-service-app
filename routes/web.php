@@ -25,7 +25,7 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers\V1'], function (\Dingo
 
     $api->get('file/{hash}', [
         'as' => 'file.download',
-        'uses' => 'ApiController@download',
+        'uses' => 'FileController@download',
     ]);
 
     $api->post('user/login', [
