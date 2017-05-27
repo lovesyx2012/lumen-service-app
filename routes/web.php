@@ -67,4 +67,9 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers\V1'], function (\Dingo
         'as' => 'members.show.json',
         'uses' => 'ApiController@getUserInfo',
     ]);
+
+    $api->get('message/users', [
+        'as' => 'message.users',
+        'uses' => 'RunController@allMessages',
+    ]);
 });
