@@ -52,10 +52,6 @@ class RunController extends BaseController
             ]
         ];
 
-        return [
-            'status_code' => 0,
-            'message'     => "",
-            'data'=>$data
-        ];
+        return $data;
     }
 }
