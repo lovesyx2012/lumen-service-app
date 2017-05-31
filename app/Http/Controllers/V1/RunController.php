@@ -6,7 +6,7 @@ use Dingo\Api\Http\Request;
 
 class RunController extends BaseController
 {
-    public function allMessages(Request $request){
+    public function messageList(Request $request){
         $data = [
             [
                 'title'=>"小跑邀请",
@@ -36,6 +36,55 @@ class RunController extends BaseController
                 'time'=>"12:13",
                 'count'=>1
              ],
+            [
+                'title'=>"雷军",
+                'url'=>"http://img1.3lian.com/gif/more/11/201212/cf9d56d05c0cbc1edbf21cf64ad9c341.jpg",
+                'message'=>"微信给你下线，看你还嘚瑟",
+                'time'=>"12:11",
+                'count'=>0
+            ],
+            [
+                'title'=>"前端开发者",
+                'url'=>"http://img1.3lian.com/gif/more/11/201212/04b335ead07530a6188a27549fad1a68.jpg",
+                'message'=>"我们的春天来啦，哈哈哈",
+                'time'=>"11:35",
+                'count'=>0
+            ]
+        ];
+
+        return $data;
+    }
+
+    public function friendList(Request $request){
+        $data = [
+            [
+                'title'=>"野生迷妹",
+                'url'=>"/res/images/friend.png",
+                'message'=>"Moon小布丁：邀请你一起小跑",
+                'time'=>"21:15",
+                'count'=>0
+            ],
+            [
+                'title'=>"野生迷妹",
+                'url'=>"/res/images/friend.png",
+                'message'=>"Moon小布丁：邀请你一起小跑",
+                'time'=>"21:15",
+                'count'=>0
+            ],
+            [
+                'title'=>"野生迷妹",
+                'url'=>"/res/images/friend.png",
+                'message'=>"Moon小布丁：邀请你一起小跑",
+                'time'=>"21:15",
+                'count'=>0
+            ],
+            [
+                'title'=>"野生迷妹",
+                'url'=>"/res/images/friend.png",
+                'message'=>"Moon小布丁：邀请你一起小跑",
+                'time'=>"21:15",
+                'count'=>0
+            ],
             [
                 'title'=>"雷军",
                 'url'=>"http://img1.3lian.com/gif/more/11/201212/cf9d56d05c0cbc1edbf21cf64ad9c341.jpg",

@@ -70,6 +70,11 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers\V1'], function (\Dingo
 
     $api->get('message/users', [
         'as' => 'message.users',
-        'uses' => 'RunController@allMessages',
+        'uses' => 'RunController@messageList',
+    ]);
+
+    $api->get('user/friends', [
+        'as' => 'user.friends',
+        'uses' => 'RunController@friendList',
     ]);
 });
